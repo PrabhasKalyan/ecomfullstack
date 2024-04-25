@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+    {% for i in orderitems %}
+    <p>{{i.product.name}}</p>
+    <p>{i.product.price}*{{i.product.quantity}}</p>
+    <p>total value:{{i.total}}</p>
+    {% endfor %}
+</html>
